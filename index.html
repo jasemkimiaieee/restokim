@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestoKim | رستو کیم</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="assets/style/app.css">
+</head>
+
+<body onload="showProducts()">
+    <div class="container">
+        <main>
+            <div class="products__container">
+                <h3 class="products__title">Desserts</h3>
+                <section class="products">
+                    <!-- Add Products Hear -->
+                </section>
+            </div>
+            <aside class="user-cart">
+                <h3 class="user-cart__title">Your Cart(0)</h3>
+                <div class="user-cart__empty">
+                    <img src="assets/images/illustration-empty-cart.svg" class="user-cart__empty-img">
+                    <span class="user-cart__empty-content">Your Added Items Will Appear Here</span>
+                </div>
+                <section class="user-cart__products">
+                    <!-- Add User Cart Item Hear -->
+                </section>
+                <div class="user-cart__total d-none">
+                    <p class="user-cart__content">Order Total</p>
+                    <h3 class="user-cart__price">$46.50</h3>
+                </div>
+                <p class="user-cart__neutral d-none">
+                    <img src="assets/images/icon-carbon-neutral.svg">
+                    This is <b>carbon-neutral</b> delivery
+                </p>
+                <button class="user-cart__confirm d-none">Confirm Order</button>
+            </aside>
+        </main>
+        <section class="modal-screen hidden">
+            <div class="modal-screen__container">
+                <img src="./assets/images/icon-order-confirmed.svg" class="modal-screen__img">
+                <h2 class="modal-screen__title">Order Confirmed</h2>
+                <p class="modal-screen__commont">We hope you enjoy your food!</p>
+                <div class="modal-screen__content">
+                    <section class="modal-screen__products">
+                        <!-- Add Modal Screen Item Hear -->
+                    </section>
+                    <div class="modal-screen__total">
+                        <p class="modal-screen__total-title">Order Total</p>
+                        <h3 class="modal-screen__total-price">$46.50</h3>
+                    </div>
+                </div>
+                <button class="modal-screen__confirm">Start New Order</button>
+            </div>
+        </section>
+    </div>
+    <script src="./assets/script/app.js"></script>
+</body>
+
+</html>
